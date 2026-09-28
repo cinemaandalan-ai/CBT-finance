@@ -1,0 +1,7 @@
+{
+  "name": "CBT Finance & Accounting Module",
+  "description": "Sistem Keuangan & Akuntansi Modern untuk Siklus Bisnis CBT: Dari Invoice, PPh 23, Jurnal Otomatis, Buku Besar, hingga Laporan Keuangan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
