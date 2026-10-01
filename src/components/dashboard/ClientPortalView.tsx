@@ -57,7 +57,7 @@ export const ClientPortalView: React.FC = () => {
       </div>
 
       {uploadSuccessMsg && (
-        <div className="p-3 rounded-lg border border-[#1b7359] bg-[#0f4c3a] text-[#50e3a6] text-xs font-semibold flex items-center justify-between">
+        <div className="p-3 rounded-lg border border-[#bde3bd] dark:border-[#1e4e22] bg-[#edf8ed] dark:bg-[#112d14] text-[#2b722d] dark:text-[#78cf77] text-xs font-semibold flex items-center justify-between">
           <div className="flex items-center gap-2">
             <CheckCircle2 className="h-4 w-4" />
             <span>{uploadSuccessMsg}</span>

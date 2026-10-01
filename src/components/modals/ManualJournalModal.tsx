@@ -220,12 +220,12 @@ export const ManualJournalModal: React.FC<ManualJournalModalProps> = ({ isOpen, 
 
             <div className="flex items-center gap-2">
               {isBalanced ? (
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-[11px] font-bold bg-[#0f4c3a] text-[#50e3a6] border border-[#1b7359]">
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-[11px] font-bold bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border border-[#bde3bd] dark:border-[#1e4e22]">
                   <CheckCircle2 className="h-3.5 w-3.5" />
                   SEIMBANG (BALANCED)
                 </span>
               ) : (
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-[11px] font-bold bg-[#4a1215] text-[#ff787b] border border-[#7a1c22]">
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-[11px] font-bold bg-[#fef2f2] text-[#b91c1c] dark:bg-[#3f1216] dark:text-[#f87171] border border-[#fecaca] dark:border-[#6e1e24]">
                   <AlertTriangle className="h-3.5 w-3.5" />
                   SELISIH {formatIDR(Math.abs(totalDebit - totalCredit))}
                 </span>

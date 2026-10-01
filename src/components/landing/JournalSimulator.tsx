@@ -179,7 +179,7 @@ export const JournalSimulator: React.FC = () => {
                 <span>Potongan PPh 23 (2% x DPP):</span>
                 <span className="font-mono tabular-nums">(-) {formatIDR(pphAmount)}</span>
               </div>
-              <div className="flex justify-between font-bold text-[#50e3a6] pt-1 border-t border-border">
+              <div className="flex justify-between font-bold text-primary pt-1 border-t border-border">
                 <span>Penerimaan Kas/Bank Bersih:</span>
                 <span className="font-mono tabular-nums">{formatIDR(netBankReceived)}</span>
               </div>
@@ -197,7 +197,7 @@ export const JournalSimulator: React.FC = () => {
                   <span className="text-xs font-mono font-bold text-primary">FASE 1: PENERBITAN INVOICE (AKRUAL)</span>
                   <h4 className="text-sm font-bold text-foreground">Jurnal Piutang & Pengakuan Pendapatan</h4>
                 </div>
-                <span className="inline-flex items-center gap-1 text-xs font-semibold text-[#10b981]">
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary">
                   <CheckCircle2 className="h-4 w-4" />
                   Balanced
                 </span>
@@ -232,8 +232,8 @@ export const JournalSimulator: React.FC = () => {
                     )}
                     <tr className="font-bold border-t-2 border-border bg-card">
                       <td className="py-2 text-foreground">TOTAL JURNAL INVOICE</td>
-                      <td className="py-2 text-right text-[#50e3a6] tabular-nums">{formatIDR(totalInvoice)}</td>
-                      <td className="py-2 text-right text-[#50e3a6] tabular-nums">{formatIDR(totalInvoice)}</td>
+                      <td className="py-2 text-right text-primary tabular-nums">{formatIDR(totalInvoice)}</td>
+                      <td className="py-2 text-right text-primary tabular-nums">{formatIDR(totalInvoice)}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -247,7 +247,7 @@ export const JournalSimulator: React.FC = () => {
                   <span className="text-xs font-mono font-bold text-primary">FASE 2: PELUNASAN KAS / BANK</span>
                   <h4 className="text-sm font-bold text-foreground">Jurnal Penerimaan Bank & Bukti Potong PPh 23</h4>
                 </div>
-                <span className="inline-flex items-center gap-1 text-xs font-semibold text-[#10b981]">
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary">
                   <CheckCircle2 className="h-4 w-4" />
                   Balanced
                 </span>
@@ -282,8 +282,8 @@ export const JournalSimulator: React.FC = () => {
                     </tr>
                     <tr className="font-bold border-t-2 border-border bg-card">
                       <td className="py-2 text-foreground">TOTAL JURNAL PEMBAYARAN</td>
-                      <td className="py-2 text-right text-[#50e3a6] tabular-nums">{formatIDR(totalInvoice)}</td>
-                      <td className="py-2 text-right text-[#50e3a6] tabular-nums">{formatIDR(totalInvoice)}</td>
+                      <td className="py-2 text-right text-primary tabular-nums">{formatIDR(totalInvoice)}</td>
+                      <td className="py-2 text-right text-primary tabular-nums">{formatIDR(totalInvoice)}</td>
                     </tr>
                   </tbody>
                 </table>

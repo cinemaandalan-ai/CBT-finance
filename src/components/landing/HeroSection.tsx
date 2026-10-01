@@ -75,7 +75,7 @@ export const HeroSection: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <div className="h-2.5 w-2.5 rounded-full bg-[#ef4444]" />
                   <div className="h-2.5 w-2.5 rounded-full bg-[#f59e0b]" />
-                  <div className="h-2.5 w-2.5 rounded-full bg-[#10b981]" />
+                  <div className="h-2.5 w-2.5 rounded-full bg-primary" />
                   <span className="ml-2 text-xs font-mono text-muted-foreground">live-preview://cbt-finance</span>
                 </div>
                 <span className="text-[11px] font-semibold text-primary">Status: Realtime</span>
@@ -155,7 +155,7 @@ export const HeroSection: React.FC = () => {
                 <div className="p-4 space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-border text-xs">
                     <span className="text-muted-foreground">Integritas Neraca:</span>
-                    <span className="inline-flex items-center gap-1 font-semibold text-[#10b981]">
+                    <span className="inline-flex items-center gap-1 font-semibold text-primary">
                       <CheckCircle2 className="h-3.5 w-3.5" />
                       Balanced (Debit = Kredit)
                     </span>

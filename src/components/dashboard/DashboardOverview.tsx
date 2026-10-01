@@ -81,7 +81,7 @@ export const DashboardOverview: React.FC = () => {
         <div className="rounded-xl border border-border bg-card p-4 space-y-2 shadow-xs">
           <div className="flex items-center justify-between text-xs text-muted-foreground">
             <span>Penerimaan Kas & Bank</span>
-            <div className="p-1.5 rounded-md bg-[#0f4c3a] text-[#50e3a6]">
+            <div className="p-1.5 rounded-md bg-primary/20 text-primary">
               <Wallet className="h-4 w-4" />
             </div>
           </div>
@@ -238,7 +238,7 @@ export const DashboardOverview: React.FC = () => {
 
           <div className="pt-2 border-t border-border flex justify-between items-center text-xs">
             <span className="text-muted-foreground">Total Realisasi Akrual:</span>
-            <span className="font-mono font-bold text-[#50e3a6] tabular-nums">Rp 86.315.000</span>
+            <span className="font-mono font-bold text-primary tabular-nums">Rp 86.315.000</span>
           </div>
         </div>
 
@@ -294,7 +294,7 @@ export const DashboardOverview: React.FC = () => {
                     </td>
                     <td className="py-3 px-3 text-center">
                       {inv.has_journal ? (
-                        <span className="text-[10px] font-bold text-[#50e3a6]">POSTED</span>
+                        <span className="text-[10px] font-bold text-primary">POSTED</span>
                       ) : (
                         <span className="text-[10px] text-muted-foreground">PENDING</span>
                       )}

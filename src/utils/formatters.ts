@@ -26,48 +26,133 @@ export function formatDateIndo(dateStr: string): string {
 export function getInvoiceStatusMeta(status: string): { label: string; bg: string; text: string; border: string } {
   switch (status) {
     case 'PAID':
-      return { label: 'Lunas (Paid)', bg: 'bg-[#0f4c3a]', text: 'text-[#50e3a6]', border: 'border-[#1b7359]' };
+      return { 
+        label: 'Lunas (Paid)', 
+        bg: 'bg-[#edf8ed] dark:bg-[#112d14]', 
+        text: 'text-[#2b722d] dark:text-[#78cf77]', 
+        border: 'border-[#bde3bd] dark:border-[#1e4e22]' 
+      };
     case 'PARTIALLY_PAID':
-      return { label: 'Sebagian (Partial)', bg: 'bg-[#402e08]', text: 'text-[#f5c042]', border: 'border-[#715312]' };
+      return { 
+        label: 'Sebagian (Partial)', 
+        bg: 'bg-[#fef9ec] dark:bg-[#332608]', 
+        text: 'text-[#b45309] dark:text-[#fbbf24]', 
+        border: 'border-[#fde68a] dark:border-[#63480f]' 
+      };
     case 'SENT':
-      return { label: 'Terkirim (Sent)', bg: 'bg-[#14324f]', text: 'text-[#60b0f4]', border: 'border-[#1f5080]' };
+      return { 
+        label: 'Terkirim (Sent)', 
+        bg: 'bg-[#eff6ff] dark:bg-[#132742]', 
+        text: 'text-[#1d4ed8] dark:text-[#60a5fa]', 
+        border: 'border-[#bfdbfe] dark:border-[#1e3a66]' 
+      };
     case 'APPROVED':
-      return { label: 'Disetujui (Approved)', bg: 'bg-[#153e40]', text: 'text-[#5fc5c8]', border: 'border-[#2a5e60]' };
+      return { 
+        label: 'Disetujui (Approved)', 
+        bg: 'bg-[#f0f9f0] dark:bg-[#16361a]', 
+        text: 'text-[#3d883c] dark:text-[#88d987]', 
+        border: 'border-[#c5eac4] dark:border-[#245228]' 
+      };
     case 'DRAFT':
-      return { label: 'Draft', bg: 'bg-[#2b2b2b]', text: 'text-[#d4d4d4]', border: 'border-[#404040]' };
+      return { 
+        label: 'Draft', 
+        bg: 'bg-[#f5f5f5] dark:bg-[#242424]', 
+        text: 'text-[#525252] dark:text-[#d4d4d4]', 
+        border: 'border-[#e5e5e5] dark:border-[#383838]' 
+      };
     case 'OVERDUE':
-      return { label: 'Jatuh Tempo (Overdue)', bg: 'bg-[#4a1215]', text: 'text-[#ff787b]', border: 'border-[#7a1c22]' };
+      return { 
+        label: 'Jatuh Tempo (Overdue)', 
+        bg: 'bg-[#fef2f2] dark:bg-[#3f1216]', 
+        text: 'text-[#b91c1c] dark:text-[#f87171]', 
+        border: 'border-[#fecaca] dark:border-[#6e1e24]' 
+      };
     default:
-      return { label: status, bg: 'bg-[#262626]', text: 'text-[#e5e5e5]', border: 'border-[#404040]' };
+      return { 
+        label: status, 
+        bg: 'bg-muted', 
+        text: 'text-foreground', 
+        border: 'border-border' 
+      };
   }
 }
 
 export function getPaymentStatusMeta(status: string): { label: string; bg: string; text: string; border: string } {
   switch (status) {
     case 'FULLY_ALLOCATED':
-      return { label: 'Teralokasi Penuh', bg: 'bg-[#0f4c3a]', text: 'text-[#50e3a6]', border: 'border-[#1b7359]' };
+      return { 
+        label: 'Teralokasi Penuh', 
+        bg: 'bg-[#edf8ed] dark:bg-[#112d14]', 
+        text: 'text-[#2b722d] dark:text-[#78cf77]', 
+        border: 'border-[#bde3bd] dark:border-[#1e4e22]' 
+      };
     case 'PARTIALLY_ALLOCATED':
-      return { label: 'Alokasi Sebagian', bg: 'bg-[#402e08]', text: 'text-[#f5c042]', border: 'border-[#715312]' };
+      return { 
+        label: 'Alokasi Sebagian', 
+        bg: 'bg-[#fef9ec] dark:bg-[#332608]', 
+        text: 'text-[#b45309] dark:text-[#fbbf24]', 
+        border: 'border-[#fde68a] dark:border-[#63480f]' 
+      };
     case 'UNALLOCATED':
-      return { label: 'Belum Teralokasi (DP)', bg: 'bg-[#14324f]', text: 'text-[#60b0f4]', border: 'border-[#1f5080]' };
+      return { 
+        label: 'Belum Teralokasi (DP)', 
+        bg: 'bg-[#eff6ff] dark:bg-[#132742]', 
+        text: 'text-[#1d4ed8] dark:text-[#60a5fa]', 
+        border: 'border-[#bfdbfe] dark:border-[#1e3a66]' 
+      };
     case 'VOID':
-      return { label: 'Dibatalkan (Void)', bg: 'bg-[#4a1215]', text: 'text-[#ff787b]', border: 'border-[#7a1c22]' };
+      return { 
+        label: 'Dibatalkan (Void)', 
+        bg: 'bg-[#fef2f2] dark:bg-[#3f1216]', 
+        text: 'text-[#b91c1c] dark:text-[#f87171]', 
+        border: 'border-[#fecaca] dark:border-[#6e1e24]' 
+      };
     default:
-      return { label: status, bg: 'bg-[#262626]', text: 'text-[#e5e5e5]', border: 'border-[#404040]' };
+      return { 
+        label: status, 
+        bg: 'bg-muted', 
+        text: 'text-foreground', 
+        border: 'border-border' 
+      };
   }
 }
 
 export function getTaxStatusMeta(status: string): { label: string; bg: string; text: string; border: string } {
   switch (status) {
     case 'VALIDATED':
-      return { label: 'Tervalidasi DJP', bg: 'bg-[#0f4c3a]', text: 'text-[#50e3a6]', border: 'border-[#1b7359]' };
+      return { 
+        label: 'Tervalidasi DJP', 
+        bg: 'bg-[#edf8ed] dark:bg-[#112d14]', 
+        text: 'text-[#2b722d] dark:text-[#78cf77]', 
+        border: 'border-[#bde3bd] dark:border-[#1e4e22]' 
+      };
     case 'RECEIVED':
-      return { label: 'Diterima dari Klien', bg: 'bg-[#14324f]', text: 'text-[#60b0f4]', border: 'border-[#1f5080]' };
+      return { 
+        label: 'Diterima dari Klien', 
+        bg: 'bg-[#eff6ff] dark:bg-[#132742]', 
+        text: 'text-[#1d4ed8] dark:text-[#60a5fa]', 
+        border: 'border-[#bfdbfe] dark:border-[#1e3a66]' 
+      };
     case 'PENDING':
-      return { label: 'Menunggu Bupot', bg: 'bg-[#402e08]', text: 'text-[#f5c042]', border: 'border-[#715312]' };
+      return { 
+        label: 'Menunggu Bupot', 
+        bg: 'bg-[#fef9ec] dark:bg-[#332608]', 
+        text: 'text-[#b45309] dark:text-[#fbbf24]', 
+        border: 'border-[#fde68a] dark:border-[#63480f]' 
+      };
     case 'CREDITED':
-      return { label: 'Sudah Dikreditkan', bg: 'bg-[#2b1f4a]', text: 'text-[#c084fc]', border: 'border-[#4c2882]' };
+      return { 
+        label: 'Sudah Dikreditkan', 
+        bg: 'bg-[#faf5ff] dark:bg-[#25173e]', 
+        text: 'text-[#7e22ce] dark:text-[#c084fc]', 
+        border: 'border-[#e9d5ff] dark:border-[#4d257e]' 
+      };
     default:
-      return { label: status, bg: 'bg-[#262626]', text: 'text-[#e5e5e5]', border: 'border-[#404040]' };
+      return { 
+        label: status, 
+        bg: 'bg-muted', 
+        text: 'text-foreground', 
+        border: 'border-border' 
+      };
   }
 }

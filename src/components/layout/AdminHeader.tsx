@@ -88,10 +88,10 @@ export const AdminHeader: React.FC<AdminHeaderProps> = ({
         <div className="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-xs">
           <span className="text-muted-foreground">Periode:</span>
           <span className="font-semibold text-foreground">{activePeriod.name}</span>
-          <span className={`inline-flex items-center gap-1 px-1.5 py-0.2 rounded text-[10px] font-bold ${
+          <span className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold ${
             activePeriod.status === 'OPEN' 
-              ? 'bg-[#0f4c3a] text-[#50e3a6]' 
-              : 'bg-[#4a1215] text-[#ff787b]'
+              ? 'bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border border-[#bde3bd] dark:border-[#1e4e22]' 
+              : 'bg-[#fef2f2] text-[#b91c1c] dark:bg-[#3f1216] dark:text-[#f87171] border border-[#fecaca] dark:border-[#6e1e24]'
           }`}>
             {activePeriod.status === 'OPEN' ? <Unlock className="h-2.5 w-2.5" /> : <Lock className="h-2.5 w-2.5" />}
             {activePeriod.status}
@@ -131,7 +131,7 @@ export const AdminHeader: React.FC<AdminHeaderProps> = ({
           aria-label="Ganti Tema"
           className="p-2 rounded-lg border border-border bg-card text-foreground hover:bg-muted transition-colors"
         >
-          {isDark ? <Sun className="h-4 w-4 text-[#5fc5c8]" /> : <Moon className="h-4 w-4 text-foreground" />}
+          {isDark ? <Sun className="h-4 w-4 text-primary" /> : <Moon className="h-4 w-4 text-foreground" />}
         </button>
 
         {/* Back to Landing Page */}

@@ -70,7 +70,7 @@ export const PaymentList: React.FC<PaymentListProps> = ({ onOpenNewPayment }) =>
 
         <div className="p-4 rounded-xl border border-border bg-card">
           <span className="text-xs text-muted-foreground block">Integritas Jurnal Penerimaan</span>
-          <span className="text-xl font-bold font-mono text-[#50e3a6] flex items-center gap-1">
+          <span className="text-xl font-bold font-mono text-primary flex items-center gap-1">
             <CheckCircle2 className="h-5 w-5" />
             100% Balanced
           </span>

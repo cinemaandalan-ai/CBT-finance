@@ -103,7 +103,7 @@ export const InvoiceDetailModal: React.FC<InvoiceDetailModalProps> = ({
               <span className="font-sans">Estimasi Pemotongan PPh 23 ({invoice.pph_rate}%):</span>
               <span className="tabular-nums">(-) {formatIDR(invoice.pph_amount)}</span>
             </div>
-            <div className="flex justify-between text-[#50e3a6] font-bold pt-1">
+            <div className="flex justify-between text-primary font-bold pt-1">
               <span className="font-sans">Estimasi Kas Bersih Ditransfer Klien:</span>
               <span className="tabular-nums">{formatIDR(invoice.total_amount - invoice.pph_amount)}</span>
             </div>
@@ -119,11 +119,11 @@ export const InvoiceDetailModal: React.FC<InvoiceDetailModalProps> = ({
           <div className="flex items-center justify-between">
             <span className="font-semibold text-foreground">Status Jurnal Akuntansi</span>
             {invoice.has_journal ? (
-              <span className="px-2 py-0.5 rounded bg-[#0f4c3a] text-[#50e3a6] font-bold text-[10px]">
+              <span className="px-2 py-0.5 rounded bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border border-[#bde3bd] dark:border-[#1e4e22] font-bold text-[10px]">
                 TERPOSTING (POSTED)
               </span>
             ) : (
-              <span className="px-2 py-0.5 rounded bg-[#402e08] text-[#f5c042] font-bold text-[10px]">
+              <span className="px-2 py-0.5 rounded bg-[#fef9ec] text-[#b45309] dark:bg-[#332608] dark:text-[#fbbf24] border border-[#fde68a] dark:border-[#63480f] font-bold text-[10px]">
                 BELUM DIPOSTING
               </span>
             )}
@@ -161,7 +161,7 @@ export const InvoiceDetailModal: React.FC<InvoiceDetailModalProps> = ({
             {!invoice.has_journal && (
               <button
                 onClick={handlePost}
-                className="px-4 py-2 rounded-lg bg-[#0f4c3a] text-[#50e3a6] border border-[#1b7359] text-xs font-bold hover:opacity-90"
+                className="px-4 py-2 rounded-lg bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border border-[#bde3bd] dark:border-[#1e4e22] text-xs font-bold hover:opacity-90"
               >
                 Posting ke Jurnal
               </button>

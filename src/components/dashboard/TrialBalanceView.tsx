@@ -75,7 +75,7 @@ export const TrialBalanceView: React.FC = () => {
       {/* Audit Banner */}
       <div className="rounded-xl border border-border bg-card p-4 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
         <div className="flex items-center gap-3">
-          <div className="p-2 rounded-lg bg-[#0f4c3a] text-[#50e3a6]">
+          <div className="p-2 rounded-lg bg-primary/20 text-primary">
             <CheckCircle2 className="h-5 w-5" />
           </div>
           <div>
@@ -95,7 +95,7 @@ export const TrialBalanceView: React.FC = () => {
             <span className="text-muted-foreground block text-[10px]">TOTAL KREDIT SALDO</span>
             <span className="font-bold text-foreground tabular-nums">{formatIDR(totalTbCredit)}</span>
           </div>
-          <span className="px-2.5 py-1 rounded text-xs font-bold bg-[#0f4c3a] text-[#50e3a6] border border-[#1b7359]">
+          <span className="px-2.5 py-1 rounded text-xs font-bold bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border border-[#bde3bd] dark:border-[#1e4e22]">
             {isBalanced ? '✓ 100% BALANCE' : 'UNBALANCED'}
           </span>
         </div>
@@ -134,10 +134,10 @@ export const TrialBalanceView: React.FC = () => {
                 <td colSpan={4} className="py-3 px-4 font-sans text-foreground">
                   TOTAL NERACA SALDO PERIODE SEPTEMBER 2025
                 </td>
-                <td className="py-3 px-4 text-right text-[#50e3a6] tabular-nums">
+                <td className="py-3 px-4 text-right text-primary tabular-nums">
                   {formatIDR(totalTbDebit)}
                 </td>
-                <td className="py-3 px-4 text-right text-[#50e3a6] tabular-nums">
+                <td className="py-3 px-4 text-right text-primary tabular-nums">
                   {formatIDR(totalTbCredit)}
                 </td>
               </tr>

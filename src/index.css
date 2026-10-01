@@ -9,9 +9,9 @@
   --card-foreground: #0a0a0a;
   --popover: #ffffff;
   --popover-foreground: #0a0a0a;
-  --primary: #5da6a8;
+  --primary: #5ea85d;
   --primary-foreground: #f8f9f2;
-  --secondary: #5fc5c8;
+  --secondary: #5ea85d;
   --secondary-foreground: #f8f9f2;
   --muted: #f5f5f5;
   --muted-foreground: #737373;
@@ -22,11 +22,11 @@
   --border: #e5e5e5;
   --input: #e5e5e5;
   --ring: #a1a1a1;
-  --chart-1: #5da6a8;
-  --chart-2: #3c9496;
-  --chart-3: #2c7a7d;
-  --chart-4: #157174;
-  --chart-5: #155e61;
+  --chart-1: #5ea85d;
+  --chart-2: #72c471;
+  --chart-3: #4b884a;
+  --chart-4: #3a6b39;
+  --chart-5: #88d887;
   --sidebar: #fafafa;
   --sidebar-foreground: #0a0a0a;
   --sidebar-primary: #171717;
@@ -35,10 +35,10 @@
   --sidebar-accent-foreground: #171717;
   --sidebar-border: #e5e5e5;
   --sidebar-ring: #a1a1a1;
-  --font-sans: Montserrat, ui-sans-serif, sans-serif, system-ui;
+  --font-sans: Inter, ui-sans-serif, sans-serif, system-ui;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: Roboto Mono, ui-monospace, monospace;
-  --radius: 0.8rem;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --radius: 1rem;
   --shadow-x: 0;
   --shadow-y: 1px;
   --shadow-blur: 3px;
@@ -64,36 +64,36 @@
   --card-foreground: #fafafa;
   --popover: #262626;
   --popover-foreground: #fafafa;
-  --primary: #458082;
+  --primary: #5ea85d;
   --primary-foreground: #f8f9f2;
-  --secondary: #2a5e60;
+  --secondary: #5ea85d;
   --secondary-foreground: #f8f9f2;
   --muted: #262626;
   --muted-foreground: #a1a1a1;
-  --accent: #458082;
+  --accent: #5ea85d;
   --accent-foreground: #f8f9f2;
   --destructive: #ff6467;
   --destructive-foreground: #fafafa;
   --border: #282828;
   --input: #343434;
   --ring: #737373;
-  --chart-1: #5da6a8;
-  --chart-2: #3c9496;
-  --chart-3: #2c7a7d;
-  --chart-4: #157174;
-  --chart-5: #155e61;
+  --chart-1: #5ea85d;
+  --chart-2: #72c471;
+  --chart-3: #4b884a;
+  --chart-4: #3a6b39;
+  --chart-5: #88d887;
   --sidebar: #171717;
   --sidebar-foreground: #fafafa;
-  --sidebar-primary: #1447e6;
-  --sidebar-primary-foreground: #fafafa;
+  --sidebar-primary: #5ea85d;
+  --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #262626;
   --sidebar-accent-foreground: #fafafa;
   --sidebar-border: #282828;
   --sidebar-ring: #525252;
-  --font-sans: Montserrat, ui-sans-serif, sans-serif, system-ui;
+  --font-sans: Inter, ui-sans-serif, sans-serif, system-ui;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: Roboto Mono, ui-monospace, monospace;
-  --radius: 0.8rem;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --radius: 1rem;
   --shadow-x: 0;
   --shadow-y: 1px;
   --shadow-blur: 3px;
@@ -172,3 +172,75 @@
   }
 }
 
+
+/* Global Harmonious Thin Scrollbar (#5ea85d) */
+html,
+body,
+*,
+.custom-scrollbar,
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #5ea85d transparent;
+}
+
+::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar,
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-track,
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb,
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #5ea85d;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover,
+.custom-scrollbar::-webkit-scrollbar-thumb:hover,
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: #437b42;
+}
+
+/* Dark Theme Scrollbar Harmony */
+.dark,
+.dark html,
+.dark body,
+.dark * {
+  scrollbar-color: #5ea85d transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb,
+.dark::-webkit-scrollbar-thumb,
+.dark .custom-scrollbar::-webkit-scrollbar-thumb,
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #5ea85d;
+  box-shadow: 0 0 6px rgba(94, 168, 93, 0.45);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover,
+.dark::-webkit-scrollbar-thumb:hover,
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover,
+.dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: #78d277;
+  box-shadow: 0 0 8px rgba(120, 210, 119, 0.6);
+}
+
+/* Scroll Progress Bar Styles */
+.scroll-indicator-bar {
+  background: linear-gradient(90deg, #5ea85d 0%, #78d277 50%, #4b884a 100%);
+  box-shadow: 0 0 8px rgba(94, 168, 93, 0.4);
+}
+
+.dark .scroll-indicator-bar {
+  background: linear-gradient(90deg, #5ea85d 0%, #88e287 50%, #5ea85d 100%);
+  box-shadow: 0 0 10px rgba(94, 168, 93, 0.6);
+}

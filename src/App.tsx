@@ -23,6 +23,7 @@ import { ClientPortalView } from './components/dashboard/ClientPortalView';
 import { InvoiceDetailModal } from './components/modals/InvoiceDetailModal';
 import { NewPaymentModal } from './components/modals/NewPaymentModal';
 import { ManualJournalModal } from './components/modals/ManualJournalModal';
+import { ScrollProgressIndicator } from './components/common/ScrollProgressIndicator';
 import { FinanceInvoice } from './types/finance';
 
 const AppContent: React.FC = () => {
@@ -49,6 +50,7 @@ const AppContent: React.FC = () => {
   if (viewMode === 'landing') {
     return (
       <div className="min-h-screen bg-background text-foreground flex flex-col font-sans selection:bg-primary selection:text-primary-foreground">
+        <ScrollProgressIndicator />
         <LandingNav />
         <main className="flex-1">
           <HeroSection />
@@ -65,6 +67,7 @@ const AppContent: React.FC = () => {
   // Render Admin Dashboard Mode (Sidebar-10 Architecture)
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex">
+      <ScrollProgressIndicator />
       {/* Sidebar-10 */}
       <AdminSidebar
         isOpenMobile={isMobileSidebarOpen}

@@ -77,8 +77,8 @@ export const InvoiceList: React.FC<InvoiceListProps> = ({
       {feedbackMsg && (
         <div className={`p-3 rounded-lg border text-xs font-medium flex items-center justify-between ${
           feedbackMsg.isError 
-            ? 'bg-[#4a1215] text-[#ff787b] border-[#7a1c22]' 
-            : 'bg-[#0f4c3a] text-[#50e3a6] border-[#1b7359]'
+            ? 'bg-[#fef2f2] text-[#b91c1c] dark:bg-[#3f1216] dark:text-[#f87171] border-[#fecaca] dark:border-[#6e1e24]' 
+            : 'bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border-[#bde3bd] dark:border-[#1e4e22]'
         }`}>
           <span>{feedbackMsg.text}</span>
           <button onClick={() => setFeedbackMsg(null)} className="ml-4 font-bold">×</button>
@@ -154,7 +154,7 @@ export const InvoiceList: React.FC<InvoiceListProps> = ({
                       <td className="py-3.5 px-4 font-mono font-bold text-foreground">
                         {inv.invoice_number}
                         {inv.has_journal && (
-                          <span className="block text-[10px] text-[#50e3a6] font-normal">
+                          <span className="block text-[10px] text-primary font-normal">
                             ✓ Jurnal Terposting
                           </span>
                         )}
@@ -194,7 +194,7 @@ export const InvoiceList: React.FC<InvoiceListProps> = ({
                             <button
                               onClick={(e) => handlePostInvoice(inv.id, e)}
                               title="Posting Jurnal Otomatis (FIN-INV-006)"
-                              className="px-2 py-1 rounded bg-[#0f4c3a] text-[#50e3a6] border border-[#1b7359] text-[10px] font-bold hover:opacity-80"
+                              className="px-2 py-1 rounded bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border border-[#bde3bd] dark:border-[#1e4e22] text-[10px] font-bold hover:opacity-80"
                             >
                               Post Jurnal
                             </button>

@@ -71,10 +71,10 @@ export const TaxManagement: React.FC = () => {
 
         <div className="p-4 rounded-xl border border-border bg-card space-y-1">
           <span className="text-xs text-muted-foreground">Bukti Potong Tervalidasi</span>
-          <span className="text-xl font-bold font-mono text-[#50e3a6] tabular-nums block">
+          <span className="text-xl font-bold font-mono text-primary tabular-nums block">
             {formatIDR(totalValidated)}
           </span>
-          <span className="text-[11px] text-[#50e3a6]">Siap dikreditkan di SPT Badan</span>
+          <span className="text-[11px] text-primary">Siap dikreditkan di SPT Badan</span>
         </div>
 
         <div className="p-4 rounded-xl border border-border bg-card space-y-1">
@@ -161,7 +161,7 @@ export const TaxManagement: React.FC = () => {
                           Validasi e-Bupot
                         </button>
                       ) : (
-                        <span className="text-[10px] text-[#50e3a6] font-bold">✓ Tervalidasi</span>
+                        <span className="text-[10px] text-primary font-bold">✓ Tervalidasi</span>
                       )}
                     </td>
                   </tr>

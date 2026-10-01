@@ -168,8 +168,8 @@ export const MasterDataView: React.FC = () => {
                       <td className="py-3 px-4 text-center">
                         <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-bold ${
                           per.status === 'OPEN'
-                            ? 'bg-[#0f4c3a] text-[#50e3a6] border border-[#1b7359]'
-                            : 'bg-[#4a1215] text-[#ff787b] border border-[#7a1c22]'
+                            ? 'bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border border-[#bde3bd] dark:border-[#1e4e22]'
+                            : 'bg-[#fef2f2] text-[#b91c1c] dark:bg-[#3f1216] dark:text-[#f87171] border border-[#fecaca] dark:border-[#6e1e24]'
                         }`}>
                           {per.status === 'OPEN' ? <Unlock className="h-3 w-3" /> : <Lock className="h-3 w-3" />}
                           {per.status}
@@ -235,7 +235,7 @@ export const MasterDataView: React.FC = () => {
                   <Wallet className="h-5 w-5 text-primary" />
                   <span className="font-bold text-foreground text-sm">{b.bank_name}</span>
                 </div>
-                <span className="text-[10px] px-2 py-0.5 rounded font-bold bg-[#0f4c3a] text-[#50e3a6]">
+                <span className="text-[10px] px-2.5 py-0.5 rounded font-bold bg-[#edf8ed] text-[#2b722d] dark:bg-[#112d14] dark:text-[#78cf77] border border-[#bde3bd] dark:border-[#1e4e22]">
                   AKTIF
                 </span>
               </div>

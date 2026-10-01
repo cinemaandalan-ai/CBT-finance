@@ -41,7 +41,7 @@ export const LandingNav: React.FC = () => {
             aria-label="Ganti Tema"
             className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-foreground hover:bg-muted transition-colors"
           >
-            {isDark ? <Sun className="h-4 w-4 text-[#5fc5c8]" /> : <Moon className="h-4 w-4 text-foreground" />}
+            {isDark ? <Sun className="h-4 w-4 text-primary" /> : <Moon className="h-4 w-4 text-foreground" />}
           </button>
 
           <button
